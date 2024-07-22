@@ -9,20 +9,18 @@ Given("el usuario esta en la pagina de inicio de ToDo", () => {
 When("agrego una nueva tarea Comprar pan", () => {
   paginatodo.agregarTarea("Comprar pan");
 });
-//Given("tengo la tarea Comprar pan", () => {
-//   paginatodo.visit();
-//   paginatodo.agregarTarea("Comprar pan");
-// });
 
-// When("marco la tarea Comprar pan como completada", () => {
-//   paginatodo.marcarTareaCompletada() {
+
+Given("tengo la tarea Comprar pan", () => {
+  paginatodo.visit();
+  paginatodo.agregarTarea("Comprar pan");
+});
+
+When("marco la tarea Comprar pan como completada", () => {
+  paginatodo.marcarTareaCompletada(1);
    
-// });
-// Then("deberia ver Comprar pan en la lista", (item) => {
-//   paginatodo.verificarTarea(item);
-// });
+});
 
-// 
 
 
 

@@ -3,6 +3,7 @@ export class PaginaToDo {
 
   visit() {
     cy.visit('https://todomvc.com/examples/typescript-react/#/');
+    cy.get('.new-todo', { timeout: 10000 }).should('be.visible'); //Espera a que el encabezado esté visible
   }
 
   agregarTarea(nombreTarea) {

@@ -5,7 +5,10 @@ Feature: Pagina web TodoMVC
     When agrego una nueva tarea Comprar pan
   
 
-    
+  Scenario: Marcar una tarea como completada
+    Given tengo la tarea Comprar pan
+    When marco la tarea Comprar pan como completada
+   
 
 
 
